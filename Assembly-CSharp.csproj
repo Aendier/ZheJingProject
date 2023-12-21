@@ -58,11 +58,18 @@
     <Analyzer Include="F:\UnityEditor\2022.3.8f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Scripts\Manager\GameCtrl.cs" />
     <Compile Include="Assets\_Scripts\Node\DisconnectingSwitch.cs" />
-    <Compile Include="Assets\_Scripts\Wire.cs" />
-    <Compile Include="Assets\_Scripts\Dynamo.cs" />
+    <Compile Include="Assets\_Scripts\Manager\PowerNodeCtrl.cs" />
+    <Compile Include="Assets\_Scripts\Node\Dynamo.cs" />
     <Compile Include="Assets\_Scripts\Node\CircuitBreaker.cs" />
-    <Compile Include="Assets\_Scripts\MyNode.cs" />
+    <Compile Include="Assets\_Scripts\Manager\PowerNodeSelector.cs" />
+    <Compile Include="Assets\_Scripts\Node\Selectable.cs" />
+    <Compile Include="Assets\_Scripts\Node\PowerNode.cs" />
+    <Compile Include="Assets\_Scripts\Node\Powerful.cs" />
+    <Compile Include="Assets\_Scripts\Panel\CtrlPanel.cs" />
+    <Compile Include="Assets\_Scripts\Node\Wire.cs" />
+    <Compile Include="Assets\_Scripts\PowerLinkedList.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
