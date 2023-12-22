@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class PowerNodeSelector : MonoBehaviour
 {
     public PowerNode currentChoice;
 
+    public event Action OnChoose;
     void Update()
     {
         // 检测鼠标点击
@@ -33,6 +35,7 @@ public class PowerNodeSelector : MonoBehaviour
                             currentChoice.gameObject.GetComponent<Selectable>().Uncheck();
                         currentChoice = results[i].gameObject.GetComponent<Selectable>().Powerful;
                         currentChoice.gameObject.GetComponent<Selectable>().Oncheck();
+                        OnChoose?.Invoke();
                         Debug.Log("选中了：" + currentChoice.gameObject.name);
                         break;
                     }

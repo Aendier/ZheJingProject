@@ -50,8 +50,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888a6efc0e1f298449342b0b19374d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  next: {fileID: 0}
   previous: {fileID: 0}
+  next: {fileID: 0}
+  isOpen: 0
+  isPowerful: 0
 --- !u!222 &5470131476016115899
 CanvasRenderer:
   m_ObjectHideFlags: 0

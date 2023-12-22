@@ -7,5 +7,12 @@ public class Dynamo : PowerNode
     protected override void Start()
     {
         base.Start();
+        IsOpen = true;
+        OnPower();
+    }
+
+    protected override void CheckPreviousNode()
+    {
+        OnPower();
     }
 }

@@ -10,15 +10,15 @@ public class DisconnectingSwitch : PowerNode
     }
 
 
-    protected override void OnPower()
+    protected override void OnOpen()
     {
-        base.OnPower();
+        base.OnOpen();
         transform.rotation = Quaternion.Euler(0, 0, 90);
     }
 
-    protected override void UnPower()
+    protected override void OnClose()
     {
-        base.UnPower();
+        base.OnClose();
         transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 }
